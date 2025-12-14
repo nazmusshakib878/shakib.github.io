@@ -1,41 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Md. Nazmus Shakib | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="container">
-    <img src="profile.jpg" class="profile">
-    <h1>Your Name</h1>
-    <p class="bio">
-      Web Enthusiast | Learner | Creator  
-    </p>
+    <div class="container">
+        <img src="profile.jpg" class="profile">
+        <h1>Md. Nazmus Shakib</h1>
+        <p class="bio">
+            Web Enthusiast | Learner | Creator
+        </p>
 
-    <div class="links">
-      <a href="https://www.facebook.com/share/1BiJdWSDXL/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/mdnazmus.shakib?igsh=NTE2bjJrYTM1ZnNm" target="_blank">Instagram</a>
-      <a href="--" target="_blank">YouTube</a>
-      <a href="https://wa.me/8801716333670" target="_blank">WhatsApp</a>
+        <div class="links">
+            <a href="https://www.facebook.com/share/1BiJdWSDXL/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/mdnazmus.shakib?igsh=NTE2bjJrYTM1ZnNm" target="_blank">Instagram</a>
+            <a href="--" target="_blank">YouTube</a>
+            <a href="https://wa.me/8801716333670" target="_blank">WhatsApp</a>
+            <a href="mailto:nazmusshakib335@gmail.com" target="_blank">Email</a>
+            <a href="https://www.snapchat.com/add/nazmusshaki9624?share_id=SqFxjNCRAt4&locale=en-US" target="_blank">Snapchat</a>
+            <a href="https://open.spotify.com/user/31kqtjba6ay3syr3rrqhbtln3y2q?si=qJ8dYZ2ISSeCxE1NaBL5Ow" target="_blank">Spotify</a>
+        </div>
+
+        <div class="cv">
+            <h2>About Me</h2>
+            <p>I am a passionate learner and aspiring web developer with a strong interest in modern web technologies. I enjoy working with HTML, CSS, and basic web design to create clean, responsive, and user-friendly websites. I believe in continuous learning and improving my skills step by step. My goal is to build professional websites and grow as a skilled developer in the future.</p>
+            
+            <blockquote>
+                "পৃথিবী থেকে কেউ তৃপ্ত আত্মা নিয়ে যেতে পারবে না কখনো"
+            </blockquote>
+
+            <h2>Blood Donation</h2>
+            <p><strong>Blood Group:</strong> A+</p>
+            <p><strong>Donation Dates:</strong> 10-03-22, 22-10-22, 05-05-23, 17-04-24</p>
+
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Basic JavaScript</li>
+                <li>GitHub</li>
+                <li>Basic Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>MySQL</li>
+                <li>PHP Laravel</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>📱 Personal Portfolio Website</h3>
+                    <p>A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-card">
+                    <h3>🛒 E-commerce UI Design</h3>
+                    <p>Frontend design for an online shopping website with product listings and cart functionality.</p>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+                <div class="project-card">
+                    <h3>📊 Student Management System</h3>
+                    <p>A basic CRUD application to manage student records using PHP and MySQL database.</p>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Laravel</span>
+                </div>
+            </div>
+
+            <h2>Education</h2>
+            
+            <h3>HSC</h3>
+            <p><strong>Stream:</strong> Science</p>
+            <p><strong>GPA:</strong> 5.00</p>
+            <p><strong>Institution:</strong> Satkhira Govt College (2018-2019)</p>
+            <p><strong>Board:</strong> Jashore</p>
+
+            <h3>SSC</h3>
+            <p><strong>Stream:</strong> Science</p>
+            <p><strong>GPA:</strong> 5.00</p>
+            <p><strong>Institution:</strong> Alipur Union Secondary School (2018)</p>
+            <p><strong>Board:</strong> Jashore</p>
+
+            <h3>BSC</h3>
+            <p><strong>Degree:</strong> Computer Science and Engineering</p>
+            <p><strong>Status:</strong> Final Year (On going)</p>
+            <p><strong>University:</strong> Northern University of Business and Technology, Khulna</p>
+
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
     </div>
 
-    <div class="cv">
-      <h2>About Me</h2>
-      <p>I am a passionate learner working on web technologies.</p>
-
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML & CSS</li>
-        <li>Basic JavaScript</li>
-        <li>GitHub</li>
-      </ul>
-
-      <h2>Education</h2>
-      <p>Your Education Details</p>
-    </div>
-  </div>
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const formMessage = document.getElementById('formMessage');
+            
+            // Simple validation
+            if(name && email && message) {
+                formMessage.textContent = `Thank you ${name}! Your message has been sent successfully.`;
+                formMessage.style.color = "#4CAF50";
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+                
+                // Clear message after 5 seconds
+                setTimeout(() => {
+                    formMessage.textContent = "";
+                }, 5000);
+            } else {
+                formMessage.textContent = "Please fill in all fields.";
+                formMessage.style.color = "#f44336";
+            }
+        });
+    </script>
 
 </body>
+
 </html>
