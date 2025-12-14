@@ -1,94 +1,117 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
+/* Previous CSS code remains the same... */
+
+/* Projects Section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 25px 0 35px;
 }
 
-.container {
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  padding: 30px;
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 5px solid #2c5364;
 }
 
-.profile {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #38bdf8;
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.bio {
-  color: #cbd5f5;
+.project-card h3 {
+    color: #203a43;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
 }
 
-.links a {
-  display: block;
-  background: #38bdf8;
-  color: black;
-  text-decoration: none;
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+.project-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-/* Facebook Button */
-.links a:nth-child(1) {
-  background: #1877F2;
-  color: white;
+.tech-tag {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #2c5364;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
 }
 
-/* Instagram Button */
-.links a:nth-child(2) {
-  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-  color: white;
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin: 25px 0;
 }
 
-/* YouTube Button */
-.links a:nth-child(3) {
-  background: #FF0000;
-  color: white;
+.form-group {
+    margin-bottom: 20px;
 }
 
-/* WhatsApp Button */
-.links a:nth-child(4) {
-  background: #25D366;
-  color: white;
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
 }
 
-.links a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2c5364;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(44, 83, 100, 0.1);
 }
 
-/* Facebook hover effect */
-.links a:nth-child(1):hover {
-  background: #0d5cb6;
+.submit-btn {
+    background: linear-gradient(135deg, #2c5364, #203a43);
+    color: white;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(32, 58, 67, 0.3);
+    width: 100%;
 }
 
-/* Instagram hover effect */
-.links a:nth-child(2):hover {
-  opacity: 0.9;
+.submit-btn:hover {
+    background: linear-gradient(135deg, #203a43, #0f2027);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(32, 58, 67, 0.4);
 }
 
-/* YouTube hover effect */
-.links a:nth-child(3):hover {
-  background: #cc0000;
+.form-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-/* WhatsApp hover effect */
-.links a:nth-child(4):hover {
-  background: #128C7E;
-}
-
-.cv {
-  text-align: left;
-  margin-top: 30px;
-}
-
-.cv h2 {
-  border-bottom: 1px solid #38bdf8;
+/* Responsive additions */
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
 }
